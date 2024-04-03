@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BMICALCULATOR3.Views.WeatherPage1"
+             Title="WeatherPage">
+
+    <VerticalStackLayout
+         Padding="30,0" 
+         Spacing="25"
+         Background="Gray">
+        <Label 
+            Text="Väderkollen!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Entry
+            x:Name="MyInput"
+            Placeholder="Ange stad du vill söka väder för:"
+            BackgroundColor="White"
+            TextColor="Black"/>
+
+
+        <Button Text="Sök"
+                TextColor="White"
+                BackgroundColor="Black"  
+                HorizontalOptions="Center"
+                Clicked="OnClickedGetWeather"/>
+
+        <StackLayout
+            Orientation="Horizontal"
+            HorizontalOptions="Center">
+            <Label 
+                x:Name="Temperature"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+      
+          <Image Source="temperature.png" 
+
+                   WidthRequest="30"
+                   HeightRequest="30"
+                   Margin="5"
+                   />
+        </StackLayout>
+
+        <StackLayout
+            Orientation="Horizontal"
+            HorizontalOptions="Center">
+            <Label 
+                x:Name="FeelsLike"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+           
+            <Image Source="humidty.png" 
+
+                   WidthRequest="30"
+                   HeightRequest="30"
+                   Margin="5"
+                />
+        </StackLayout>
+
+        <StackLayout
+            Orientation="Horizontal"
+            HorizontalOptions="Center">
+            <Label 
+                x:Name="MinMaxTemp"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+          
+             <Image Source="weather.png" 
+
+                   WidthRequest="30"
+                   HeightRequest="30"
+                   Margin="5"
+                  />
+        </StackLayout>
+
+        <StackLayout
+            Orientation="Horizontal"
+            HorizontalOptions="Center">
+            <Label 
+                x:Name="Hum"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+        
+            <Image Source="windy.jpg" 
+
+
+                   WidthRequest="30"
+                   HeightRequest="30"
+                   Margin="5"
+                   />
+        </StackLayout>
+
+    </VerticalStackLayout>
+
+</ContentPage>

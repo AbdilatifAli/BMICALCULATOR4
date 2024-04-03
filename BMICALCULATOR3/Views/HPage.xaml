@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BMICALCULATOR3.Views.HPage"
+             Title="HPage"
+             BackgroundColor="Grey">
+
+    <StackLayout Padding="20">
+        <Label Text="User Information" FontSize="Title" HorizontalOptions="Center" Margin="0,20,0,10" />
+
+        <Frame BackgroundColor="Black" Padding="10" CornerRadius="10" Margin="0,0,0,20">
+            <StackLayout>
+                <Label Text="Name:" />
+                <Label Text="{Binding Name}" FontAttributes="Bold" TextColor="White" />
+            </StackLayout>
+        </Frame>
+
+        <Frame BackgroundColor="Black" Padding="10" CornerRadius="10" Margin="0,0,0,20">
+            <StackLayout>
+                <Label Text="Age:" />
+                <Label Text="{Binding Age}" FontAttributes="Bold" TextColor="White" />
+            </StackLayout>
+        </Frame>
+
+        <Frame BackgroundColor="Black" Padding="10" CornerRadius="10" Margin="0,0,0,20">
+            <StackLayout>
+                <Label Text="Weight (kg):" />
+                <Label Text="{Binding Weight}" FontAttributes="Bold"  TextColor="White"/>
+            </StackLayout>
+        </Frame>
+
+        <Frame BackgroundColor="Black" Padding="10" CornerRadius="10" Margin="0,0,0,20">
+            <StackLayout>
+                <Label Text="Height (cm):" />
+                <Label Text="{Binding Height}" FontAttributes="Bold"  TextColor="White"/>
+            </StackLayout>
+        </Frame>
+
+        <Frame BackgroundColor="Black" Padding="10" CornerRadius="10">
+            <StackLayout>
+                <Label Text="BMI:" />
+                <Label Text="{Binding Bmi}" FontAttributes="Bold" TextColor="White" />
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</ContentPage>

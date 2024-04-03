@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BMICALCULATOR3.Views.EditUserpage"
+             Title="EditUserpage"
+             BackgroundColor="Grey">
+
+    <StackLayout
+        Margin="10,0,0,0"
+        VerticalOptions="Center" 
+        Spacing="25">
+
+        <Entry
+        x:Name="NameEntry"
+        Background="#2a2a2a"
+        Placeholder="Your Name"
+        PlaceholderColor="#7d7c7c"
+        TextColor="#ccc"/>
+
+        <Entry 
+             x:Name="Age"
+             BackgroundColor="#2A2A2A"
+             Placeholder="Age in years"
+             PlaceholderColor="#7d7c7c"
+             TextColor="#CCC"
+             Keyboard="Numeric"/>
+
+        <Entry 
+            x:Name="Weight"
+            BackgroundColor="#2A2A2A"
+            Placeholder="Weight in Kg (e.g. 90)"
+            PlaceholderColor="#7d7c7c"
+            TextColor="#CCC"
+            Keyboard="Numeric"/>
+        <Entry  
+            x:Name="Height"
+            BackgroundColor="#2A2A2A"
+            Placeholder="Height in Meters"
+            PlaceholderColor="#7d7c7c"
+            TextColor="#CCC"
+            Keyboard="Numeric"/>
+
+         <Entry  
+            x:Name="BMI"
+            IsEnabled="False"
+            BackgroundColor="#2A2A2A"
+            Placeholder="Your BMI"
+            PlaceholderColor="#7d7c7c"
+            TextColor="#CCC"/>
+
+
+        <Button
+            Text="Update User"
+            Clicked="OnClickedUpdateUser"
+            BackgroundColor="Black"
+            TextColor="White"/>
+                  
+
+            <Button
+             Text="Delete User"
+             Clicked="OnClickedDeleteUser"
+             BackgroundColor="Black"
+             TextColor="White"/>
+    </StackLayout>
+</ContentPage>
